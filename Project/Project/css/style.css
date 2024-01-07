@@ -1,0 +1,371 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/BalooChettan-Regular.ttf");
+    src: url("../fonts/BalooChettan-Regular.ttf");
+}
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+    
+    
+}
+header{
+    position: fixed;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: #0000005b;
+   
+}
+header:hover{
+    background-color: #000000;
+}
+
+header .brand{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+header .navigation .navigation-item a{
+    position: relative;
+color: #ffffff;
+font-size: 1em;
+font-weight: 500;
+text-decoration: none;
+margin-left: 30px;
+transition: 0.3s ease;
+}
+
+header .navigation .navigation-item a::before{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width:0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-item a:hover:before{
+width: 100%;
+}
+@media(max-width:1340px){
+
+    header{
+      padding: 12px 20px;
+      
+    }
+    header .navigation{
+        display: none;
+            }
+            header .navigation.active{
+                position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(1,1,1, 0.5);
+          
+        }
+            header .navigation .navigation-item a{
+                color: #222;
+                font-size: 1.2em;
+                margin: 20px;
+                
+            }
+            header .navigation.active .navigation-item a::before{
+         background:#222;
+         height: 5px;
+            }
+             header .navigation .navigation-item{
+                background: #ffffff;
+                width: 600px;
+                max-width: 600px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0 5px 25px rgb( 1 1 1 / 20%);
+        
+             }
+            .menu-btn{
+                background: url("images/menu-removebg-preview\ \(1\).png")no-repeat; 
+                background-size: 40px;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            .menu-btn.active{
+                z-index: 999;
+                background: url("images/close1.png")no-repeat;
+                background-size:20px ;
+                background-position: center;
+                transition: 0.3s ease;
+            }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-size: 14px;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+
+/* about section start */
+
+.about_section {
+    width: 100%;
+    float: left;
+    background-color:  #dba9a9;
+    padding-bottom: 90px;
+}
+.about_section img{
+width: 550px;
+margin-top: 50px;
+}
+@media(max-width:1500px){
+.about_section img{
+    width: 300px;
+    margin-top: 50px;
+    height: 400px;
+    }
+}
+@media(max-width:970px){
+    .about_section img{
+        width: 500px;
+        margin-top: 50px;
+        height: 400px;
+        }
+    }
+    @media(max-width:970px){
+        .about_section img{
+            width: 300px;
+            margin-top: 50px;
+            height: 300px;
+            }
+        }
+        @media(max-width:320px){
+            .about_section img{
+                width: 200px;
+                margin-top: 50px;
+                height: 150px;
+                }
+            }
+            @media(max-width:228px){
+                .about_section img{
+                    width: 100px;
+                    margin-top: 50px;
+                    height: 50px;
+                    }
+                }
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 55px;
+    color: #e1e8e9;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin: 0px;
+    color: #e0f3d9;
+    padding: 50px 0px;
+}
+
+.readmore_bt {
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+
+.readmore_bt a {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 8px 0px;
+    text-transform: uppercase;
+}
+
+.readmore_bt a:hover {
+    background-color: #5c0e63;
+}
+
+
+/* about section end */
+
+/* mission section start */
+
+.mission_section {
+    width: 100%;
+    float: left;
+    background-color: #aba4e7;
+}
+
+.mission_taital {
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #ebe2e2;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 140px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mission_text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #eed2cb;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 140px;
+}
+
+.mission_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+    padding: 40px 50px;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(104, 12, 63, 0.959);
+}
+
+.container_main:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.some_text {
+    color: #f3ecec;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.alteration_text {
+    font-size: 14px;
+    color: #e4f3e4;
+    text-align: center;
+}
+
+.btn_main {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.donate_bt {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.donate_bt a {
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #e3e3e9;
+    background-color: #130e3f;
+    border: 2px solid #111010;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.donate_bt a:hover {
+    color: #ffffff;
+    background-color: #1ab7df;
+}
+
+
+@media(max-width:400px){
+    .container_main p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

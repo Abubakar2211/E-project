@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #aba4e7;
+}
+header{
+    position: fixed;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: #0000005b;
+   
+}
+header:hover{
+    background-color: #000000;
+}
+
+header .brand{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+header .navigation .navigation-item a{
+    position: relative;
+color: #ffffff;
+font-size: 1em;
+font-weight: 500;
+text-decoration: none;
+margin-left: 30px;
+transition: 0.3s ease;
+}
+
+header .navigation .navigation-item a::before{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width:0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-item a:hover:before{
+width: 100%;
+
+}
+#location{
+    margin-top: 0px;
+  width: 100%;
+    position: absolute;
+}
+@media(max-width:1340px){
+
+    header{
+      padding: 12px 20px;
+      
+    }
+    header .navigation{
+        display: none;
+            }
+            header .navigation.active{
+                position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(1,1,1, 0.5);
+          
+        }
+            header .navigation .navigation-item a{
+                color: #222;
+                font-size: 1.2em;
+                margin: 20px;
+                
+            }
+            header .navigation.active .navigation-item a::before{
+         background:#222;
+         height: 5px;
+            }
+             header .navigation .navigation-item{
+                background: #ffffff;
+                width: 600px;
+                max-width: 600px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0 5px 25px rgb( 1 1 1 / 20%);
+        
+             }
+            .menu-btn{
+                background: url(menu-removebg-preview\ \(1\).png)no-repeat;
+                background-size: 40px;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            .menu-btn.active{
+                z-index: 999;
+                background: url(close1.png)no-repeat;
+                background-size:20px ;
+                background-position: center;
+                transition: 0.3s ease;
+            }
+}
+.container{
+     width: 60%;
+     padding: 45px;
+     border-radius: 0;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     
+}
+
+
+.row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.col-xl-7{
+  
+    padding: 20px;
+}
+.col-xl-5{
+    background-color: #1089ff;
+    padding: 20px;
+    color: white;
+}
+.from-control{
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: nono!important;
+    border: 1px solid rgb(0, 0, 0.1);
+}
+.bi{
+    font-size: 20px;
+}
+.d-flex p{
+    font-size: 18px;
+    padding-left: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contect-page img{
+    width: 100%;
+    height: 470px;
+  
+    z-index: -1;
+}
+#contect-aa{
+    margin-top:350px;
+}
+
+@media only screen and (max-width:1200px){
+    .container{
+        margin-top: 550px;
+    }
+
+    .contect-page{
+margin-top: 50px;
+    }
+#contect-aa{
+    margin-top:550px;
+}
+.contect-page img{
+    width: 100%;
+    height: 270px;
+    
+    z-index: -1;
+}
+#feedback{
+    /* margin-top: -400px; */
+    width: 50px;
+}
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        margin-top: -50px;
+        
+    } 
+
+    .contect-page img{
+        width: 100%;
+        height: 130px;
+        z-index: -1;
+    }  
+    #contect-aa{
+        margin-top:600px;
+    }
+    .feedback{
+        margin-top: -450px;
+    }
+    #location-aptech{
+    
+      
+    }
+}@media(max-width:1340px){
+
+    header{
+      padding: 12px 20px;
+      
+    }
+    section{
+        padding: 100px 20px;
+
+    }
+    .Home .media-icons{
+        right: 15px;
+    }
+header .navigation{
+display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1,1,1, 0.5);
+  
+}
+    header .navigation .navigation-item a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+        
+    }
+    header .navigation.active .navigation-item a::before{
+ background:#222;
+ height: 5px;
+    }
+     header .navigation .navigation-item{
+        background: #ffffff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb( 1 1 1 / 20%);
+
+     }
+    .menu-btn{
+        background: url(images/menu-removebg-preview\ \(1\).png)no-repeat;
+        background-size: 40px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(images/close1.png)no-repeat;
+        background-size:20px ;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+    .container{
+        width: 100%;
+        margin-top: -250px;
+      
+    }
+    
+    .feedback{
+        margin-top: -450px;
+    }
+    #location-aptech{
+
+        margin-left: 0px;
+        width: 100%;
+        height: 250px;
+    }
+}
+#contect{
+    margin-top: 550px;
+}
+/* Section-two */
+.container{
+    /* width: 100%; */
+  
+}
+
+.feedback{
+    margin-top: 650px;
+}
+#footer{
+    margin-top: 450px;
+}

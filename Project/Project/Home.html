@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colligraphy</title>
+    <link rel="icon" type="image/x-icon" href="images/img3.webp">
+
+    <link rel="stylesheet" href="css/Project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="home-page">
+        <Header class="fixed-top">
+            <a href="Home.html" class="brand fixed">CALLIGRAPHY</a>
+            <div class="menu-btn"></div>
+            <div class="navigation ">
+                <div class="navigation-item">
+                    <a href="Home.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Work.html">Work</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+            </div>
+        </Header>
+
+        <section class="Home">
+            <video id="home-video" class="video-slide active"
+                src="images/Modern Calligraphy with Ice Cream Sticks _ Paintastic Valley.mp4" autoplay muted loop></video>
+            <video id="home-video" class="video-slide "
+                src="images/Calligraphy with IceCream Stick DIY _ Paintastic Store (1).mp4" autoplay muted loop></video>
+            <div id="home-text" class="content active">
+                <h1>COLLIGRAPHY <br><span>INTRODUCTION</span></h1>
+                <p>Calligraphy is a visual art that involves the creation of beautiful and elegant writing. It is the
+                    art of writing letters and symbols by hand, using a wide variety of materials such as pens, brushes,
+                    and ink. The word "calligraphy" comes from the Greek words "kallos," meaning beauty, and "graphein,"
+                    meaning writing. </p>
+                <div id="btn">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div id="home-text" class="content">
+                <h1>COLLIGRAPHY<br><span>WORK</span></h1>
+                <p>Calligraphy is a beautiful and elegant art form that uses the written word as a means of expression.
+                    It combines visual artistry with the written word to create stunning pieces that are both functional
+                    and aesthetic. Calligraphy can be used to create everything from wedding invitations and
+                    certificates to artwork and decorative pieces. </p>
+                <div id="btn">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+
+            <div class="media-icons">
+
+                <a href=""><i class="fa fa-facebook "></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-twitter "></i></a>
+            </div>
+            <div id="slider" class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+
+            </div>
+        </section>
+
+    </div>
+    <script type="text/javascript">
+        const menu = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menu.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // 
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+    <!-- Section-two -->
+    <div id="img-intro" class=" text-center p-5 text-white" style="    background: #2bac96 ;">
+        <div class="into-heading">
+            <h1 class="mt-5">COLLIGRAPHY</h1>
+            <h4 class="">DR. XIAOHAN DU</h4>
+        </div>
+
+        <div class=" mt-5">
+            <div class="row">
+                <div class="into-img col-lg-6 mt-5">
+                    <img class="image-size" src="images/imgintro.webp" alt="non">
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <h1>DR. XIAOHAN DU</h1>
+                    <h5></h5>
+
+                    <p> Calligraphy has been used for thousands of years in various cultures around the world, including
+                        China, Japan, Arabic, and Western cultures. It has been used for everything from religious texts
+                        and legal documents to poetry and art.</p>
+                    <p>One of the most important aspects of calligraphy is the creation of different styles of writing,
+                        also known as "hands." Each style has its own unique characteristics, such as the size and shape
+                        of letters, the amount of space between letters, and the use of flourishes and embellishments.
+                    </p>
+                    <br><br><br>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Section-three -->
+    <div id="home-video " class="text-white" style="   background-color: #aba4e7;">
+        <br><br>
+        <div class="row">
+            <div class="video-heading">
+                <h1>COLLIGRAPHY</h1>
+                <h4>Create colligraphy art in arabic</h4>
+            </div>
+            <div class="video-intro col-xl-6 ">
+                <h1>Yushaa Abdullah,</h1>
+                <h5></h5>
+                <p class="text-white">Calligraphy is a beautiful and elegant art form that uses the written word as a means of expression.
+                    It combines visual artistry with the written word to create stunning pieces that are both functional
+                    and aesthetic. Calligraphy can be used to create everything from wedding invitations and
+                    certificates to artwork and decorative pieces. It requires a steady hand, attention to detail, and a
+                    deep appreciation for the art of writing. Calligraphy is a timeless art form that continues to
+                    inspire and captivate people all over the world.</p>
+            </div>
+            <div class="videofor col-xl-6  ">
+                <video height="300px" width="500px" controls>
+                    <source src="images/Calligraphy with IceCream Stick DIY _ Paintastic Store (1).mp4" type="video/mp4">
+                    <source src="images/Calligraphy with IceCream Stick DIY _ Paintastic Store (1).mp4" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- 
+<!-- Section-four -->
+    <div id="card" class="profile-area" style="   background-color: #aba4e7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img1"><img src="images/img3.webp" alt=""></div>
+                        <div class="img2"><img src="images/Ahsan (2).jpg" alt=""></div>
+                        <div class="main-text">
+                            <h2>Ahsan baig</h2>
+                            <p>My name is Ahsan baig.I am astudent of aptech .I am teammate of this website.
+                                Me and my team mate have create this together and I had a lot of fun making this website.I have gained a lot of knowledge about calligraphy by makikng this website.
+                            I am thankful to aptech who have given me this website to increase knowledge in my work.</p>
+                        </div>
+                        <div class="socials">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img1"><img src="images/img3.webp" alt=""></div>
+                        <div class="img2"><img src="images/Abubakar.jpg" alt=""></div>
+                        <div class="main-text">
+                            <h2>Abubakar baig</h2>
+                            <p>My name is abubakar baig.I am astudent of aptech and I'm laying this website down.
+                            Me and my team mate have create this together and I had a lot of fun making this website.I have gained a lot of knowledge about calligraphy by makikng this website.
+                        I am thankful to aptech who have given me this website to increase knowledge in my work. </p>
+                        </div>
+                        <div class="socials">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="img1"><img src="images/img3.webp" alt=""></div>
+                        <div class="img2"><img src="images/ali.jpg" alt=""></div>
+                        <div class="main-text">
+                            <h2>Ali haider</h2>
+                            <p>My name is Ali haider.I am astudent of aptech.I am teammate of this website.
+                                Me and my team mate have create this together and I had a lot of fun making this website.I have gained a lot of knowledge about calligraphy by makikng this website.
+                            I am thankful to aptech who have given me this website to increase knowledge in my work.</p>
+                        </div>
+                        <div class="socials">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section-five -->
+
+
+    <footer class=" text-white pt-5 pb-4" style="background-color: black;">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">company name</h5>
+                    <p>Calligraphy (from Greek καλλιγραφία (kalligraphía) 'beautiful writing') is a visual art related to writing and is the design and execution of lettering with a pen, ink brush, or other writing instrument.[1]: 17  Contemporary calligraphic practice can be defined as "the art of giving form to signs in an expressive, harmonious, and skillful manner"</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Colligraphy</h5>
+                    <p>
+                        <a href="Home.html" class="text-white" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                        <a href="About.html" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="Work.html" class="text-white" style="text-decoration: none;">Work</a>
+                    </p>
+                    <p>
+                        <a href="Gallery.html" class="text-white" style="text-decoration: none;">Gallery</a>
+                    </p>
+                    <p>
+                        <a href="Contact.html" class="text-white" style="text-decoration: none;">Contact</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Team mad</h5>
+                    <p>
+                        <a href="#card" class="text-white" style="text-decoration: none;">Abubakar baig</a>
+                    </p>
+                    <p>
+                        <a href="#card" class="text-white" style="text-decoration: none;">Ahsan baig</a>
+                    </p>
+                    <p>
+                        <a href="#card" class="text-white" style="text-decoration: none;">Ali haider</a>
+                    </p>
+                    <p>
+                        <a href="#card" class="text-white" style="text-decoration: none;">Ali Shanwer</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contect</h5>
+                    <p>
+                        <i class="fa fa-home mr-3"></i>aptechorangi
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i>aptechorangi.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>03122082355
+                    </p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i>aptechorangi
+                    </p>
+
+
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row aling-item-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Lorem ipsum dolor sit oris. Odit tenetur quaerat provident!
+                        <a href="" style="text-decoration: none;">
+                            <strong>abubakar</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white " style="font-size: 23px;"> <i
+                                        class="fa fa-facebook mr-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white " style="font-size: 23px;"> <i
+                                        class="fa fa-twitter mr-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white " style="font-size: 23px;"> <i
+                                        class="fa fa-instagram mr-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white " style="font-size: 23px;"> <i
+                                        class="fa fa-google mr-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
